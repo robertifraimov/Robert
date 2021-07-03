@@ -1,11 +1,36 @@
 
+
+import WatchBrands from './WatchBrands/WatchBrands';
+import Header from './Header/Header';
+import Home from './Home/Home';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+
+
+
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <div className="App">
+        <Header/>
 
-    </div>
+          <Switch>
+            <Route path="/WatchBrands">
+              <WatchBrands/>
+            </Route>
+            <Route path="/">
+              <Home/>
+            </Route>
+          </Switch>
+          
+        
+      </div>
+    </Router>
   );
 }
 
