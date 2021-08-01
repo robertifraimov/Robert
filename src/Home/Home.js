@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import './Home.css'
+import '../Home/Home.css';
+import ProfileImage from '../Images/Profile.jpeg';
 
-export default class Home extends Component {
+
+ class Home extends Component {
     render() {
         return (
-            <div className="home">
-                HOME
+            <div className="Home">
+               <img src={ProfileImage} alt="Profile" className="ProfileImage"/>
             </div>
         )
     }
 }
+export default Home;

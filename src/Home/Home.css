@@ -1,4 +1,9 @@
-.home {
-  
-    font-size: 100px;
+
+.ProfileImage {
+    display: flex;
+    margin-top: 30px;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 2px 5px 17px 0 rgb(0 0 0 / 75%);
+    margin-bottom: 30px;
 }
